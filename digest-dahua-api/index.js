@@ -12,7 +12,7 @@ class Dahua{
     }
 
     async test_connection(){
-        return await isReachable("http://" + this.ip);
+        return isReachable("http://" + this.ip);
     }
 
     async set_ip(ip){
@@ -38,7 +38,7 @@ class Dahua{
 
         const options = {};
         const syncTime_url = `http://${this.ip}:${this.port}/cgi-bin/global.cgi?action=setCurrentTime&time=${year}-${month}-${date}%20${hour}:${minute}:${secon}`;
-        await this.connection.fetch(syncTime_url, options);
+        return await this.connection.fetch(syncTime_url, options);
     }
 }
 

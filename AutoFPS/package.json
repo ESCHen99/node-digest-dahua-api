@@ -1,0 +1,8 @@
+{
+  "name": "AutoFPS",
+  "version": "1.0.0",
+  "dependencies": {
+    "digest-fetch": "^1.1.1",
+    "is-reachable": "^4.0.0"
+  }
+}
