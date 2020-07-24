@@ -1,0 +1,101 @@
+{
+  "ip": "192.168.1.108",
+  "port": "80",
+  "screens": [
+    [
+      {
+        "action" : "click",
+        "selector" : "#nation_select"
+      },
+      {"action" :  "fill",
+        "selector": "#nation_select",
+        "text" : "Spain"
+      },
+      {
+        "action" : "keypress",
+        "selector": "#nation_select",
+        "key" : "Enter"
+      },
+      {
+        "action" : "click",
+        "selector": "#init_language"
+      },
+      {
+        "action": "click",
+        "selector": "#login_permission4 .u-dialog-foot a"
+      }
+    ],
+    [
+      {
+        "action": "click",
+        "selector": "#login_permission1 input[type=checkbox]"
+      },
+      {
+        "action": "click",
+        "selector": "#login_permission1 .u-dialog-foot a"
+      }
+    ],
+    [
+      {
+        "action": "click",
+        "selector": "#devinit_time_zone #syncPCBtn"
+      },
+      {
+        "action": "delay",
+        "time": 1000
+      },
+      {
+        "action": "click",
+        "selector": "#devinit_time_zone .u-dialog-foot a"
+      }
+    ],
+    [
+      {
+        "action": "click",
+        "selector": "#device_init input[name=newpwd]"
+      },
+      {
+        "action": "fill",
+        "selector": "#device_init input[name=newpwd]",
+        "text": "admin1234"
+      },
+      {
+        "action": "click",
+        "selector": "#device_init input[name=newpwdcfm]"
+      },
+      {
+        "action": "fill",
+        "selector": "#device_init input[name=newpwdcfm]",
+        "text": "admin1234"
+      },
+      {
+        "action": "click",
+        "selector": "#device_init #devInit_mail_enable"
+      },
+      {
+        "action": "click",
+        "selector": "#device_init .u-dialog-foot a"
+      }
+    ],
+    [
+      {
+        "action": "click",
+        "selector": "#login_permission2 .u-dialog-foot a"
+      },
+      {
+        "action" : "delay",
+        "time" : 200
+      }
+    ],
+    [
+      {
+        "action": "click",
+        "selector": "#login_permission3 .u-dialog-foot a"
+      },
+      {
+        "action" : "delay",
+        "time" : 200
+      }
+    ]
+  ]
+}
